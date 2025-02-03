@@ -2,7 +2,7 @@ body {
     background-color: #8CB3BA
 }
 header {
-    background-color:
+    background-color: #8CB3BA
 }
 #content {
     max-width: 1600px;
@@ -12,7 +12,8 @@ nav a:hover {
     background-color: black;
     color: #0B090A
 }
-.icon {
+.icon,
+.logo {
     width: 80px;
 }
 nav a {
