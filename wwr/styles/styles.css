@@ -58,7 +58,7 @@ main section{
     background-color:#0B090A
 }
 #hero-img {
-    width: 100px;
+    width: 100%;
 }
 footer p {
     font-size: 1.2em;
