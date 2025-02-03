@@ -12,8 +12,7 @@ nav a:hover {
     background-color: black;
     color: #0B090A
 }
-.icon,
-.logo {
+.icon, .logo {
     width: 80px;
 }
 nav a {
