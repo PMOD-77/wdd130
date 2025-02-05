@@ -1,0 +1,27 @@
+header {
+    margin: 0 auto;
+    max-width: 1000px;
+    background-color: darkgray;
+}
+
+.header-images {
+    display: block;
+    align-content: center;
+    max-width: 1000px;
+}
+
+.seven {
+    max-width: 1000px;
+    display: flex;
+    margin: 0 auto;
+    background-color: rgb(97, 97, 97);
+
+    padding: 36px 0;
+}
+
+.seven img {
+    max-width: 230px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 12px solid #3f3f3f;
+}
