@@ -1,61 +1,89 @@
-body {
-    background-color: #8CB3BA
+body { 
+    background-color: #8CB3BA;
+    text-align: center;
+}
+head {
+    background-color: #8CB3BA;
+    color: #8CB3BA;
 }
 header {
-    background-color: #8CB3BA
+    background-color: #2FC6C6;
+    color: #2FC6C6;
 }
 #content {
     max-width: 1600px;
     margin: 0 auto;
 }
 nav a:hover {
-    background-color: black;
-    color: #0B090A
+    background-color: #2FC6C6;
+    color: #0B090A;
+    text-decoration: none;
 }
 .icon, .logo {
     width: 80px;
 }
 nav a {
+    background-color: #2FC6C6;
     text-align: center;
-    color: #8CB3BA
+    color: #0B090A;
     text-decoration: none;
 }    
 footer {
-    background-color: #2FC6C6
+    background-color: #2FC6C6;
+    color: #0B090A;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2em;
 }
 footer a {
-    font-size: none;
+    background-color: #2FC6C6;
+    text-align: center;
+    color: #0B090A;
+    text-decoration: none;
+    font-size: 1.2em;
 }   
 footer a:hover {
     text-decoration: underline;
+    background-color: #2FC6C6;
+    color: #0B090A;
+    text-align: center;
+    font-size: 1.2em;
+    
 }   
 .button-box {
     text-align: center;
 
 }
 main section{
+    background-color: #2FC6C6;
     text-align: center;
 }
 #background {
     height: 725px;
-    background-color: #8CB3BA
+    background-color: #8CB3BA;
 }
 .join {
-    background-color:#2FC6C6
+    background-color:#2FC6C6;
     text-decoration: none;
+    text-align: center;
+    color: #0B090A;
 }
 .join:hover {
-    background-color:#2FC6C6
+    background-color:#2FC6C6;
 }
 .book {
-    background-color:#323234
+    background-color:#323234;
     text-decoration: none;
+    text-align: center;
+    color: #0B090A;
+
 }
 .book:hover {
-    background-color:#2FC6C6
+    background-color:#2FC6C6;
 }
 .msg {
-    background-color:#0B090A
+    background-color:#8CB3BA;
+
 }
 #hero-img {
     width: 100%;
@@ -66,6 +94,9 @@ footer p {
 footer p a:hover{
     text-decoration: underline;
 }
+footer p a:hover {
+    text-decoration: underline;
+}
 #hero-msg h1{
     text-align: center;
 }
@@ -73,8 +104,32 @@ footer p a:hover{
     text-align: center;
 }
 h1 {
+    background-color: #2FC6C6;
+    color: #0B090A;
+    text-align: center;
+    text-decoration: none;
     font-size: 3em;
+    
 }
 h2 {
     font-size: 2.5em;
+}
+nav {
+    background-color: #2FC6C6;
+    color: #323234;
+    text-decoration: none;
+    text-align: center;
+}
+main {
+    background-color: #2FC6C6;
+    color: #0B090A;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+div {
+    background-color: #2FC6C6;
+    color: #0B090A;
+    text-align: center;
+    text-decoration: none;
 }

@@ -30,23 +30,37 @@ h1 {
     margin: 50px 0;
     padding: 17px;
     background-color: magenta;
+    color: greenyellow;
     text-align: center;
+    text-shadow: 
+    0 0 5px greenyellow,   /* White glow */
+    0 0 10px greenyellow, /* Pink glow */
+    0 0 15px greenyellow, /* Pink glow */
+    0 0 20px greenyellow; /* Pink glow */
+}
+
+#h1 {
+    color: white;
 }
 
 footer {
     background-color: darkblue;
     color: darkcyan;
+    font-weight: bold;
 }
 
 footer a {
     padding: 25px;
 }
 
-
-
 img{
     max-width: 1000px;
-    border: 7px solid blue;
+    border: 7px solid cyan;
     display: block;
     margin: 0 auto;
 }
+
+body{
+    background-color: goldenrod;
+}
+
