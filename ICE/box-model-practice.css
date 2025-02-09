@@ -1,5 +1,12 @@
 main {
-    background-color: goldenrod;
+    background-color: black;
+    color: cyan;
+    font-weight: bolder;
+    text-shadow:     
+    0 0 5px  royalblue,   /* White glow */
+    0 0 10px royalblue, /* Pink glow */
+    0 0 15px royalblue, /* Pink glow */
+    0 0 20px royalblue; /* Pink glow */
 }
 
 *{
@@ -10,28 +17,16 @@ main {
 
 
 header {
-    background-color: aquamarine;
+    background-color: darkblue;
     padding: 70px;
 }
 
 nav a {
-    color: blueviolet;
+    color: yellow;
     text-decoration: none;
     font-size: 1.7em;
     padding: 70px;
-}
-
-nav a:hover {
-    color: rebeccapurple;
-    background-color: royalblue;
-}
-
-h1 {
-    margin: 50px 0;
-    padding: 17px;
-    background-color: magenta;
-    color: greenyellow;
-    text-align: center;
+    font-weight: bold;
     text-shadow: 
     0 0 5px greenyellow,   /* White glow */
     0 0 10px greenyellow, /* Pink glow */
@@ -39,14 +34,43 @@ h1 {
     0 0 20px greenyellow; /* Pink glow */
 }
 
+nav a:hover {
+    color: white;
+    background-color: aquamarine;
+    text-shadow: 
+    0 0 5px  magenta,   /* White glow */
+    0 0 10px magenta, /* Pink glow */
+    0 0 15px magenta, /* Pink glow */
+    0 0 20px magenta; /* Pink glow */
+}
+
+h1 {
+    margin: 50px 0;
+    padding: 17px;
+    background-color: darks;
+    color: greenyellow;
+    text-align: center;
+    text-shadow: 
+    0 0 5px  yellow,   /* White glow */
+    0 0 10px yellow, /* Pink glow */
+    0 0 15px yellow, /* Pink glow */
+    0 0 20px yellow; /* Pink glow */
+}
+
 #h1 {
     color: white;
 }
 
 footer {
-    background-color: darkblue;
-    color: darkcyan;
-    font-weight: bold;
+    color: royalblue;
+    text-shadow:     
+    0 0 5px  cyan,   /* White glow */
+    0 0 10px cyan, /* Pink glow */
+    0 0 15px cyan, /* Pink glow */
+    0 0 20px cyan; /* Pink glow */
+    font-weight: bolder;
+    background-color: blueviolet;
+    font-weight: bolder;
 }
 
 footer a {
@@ -55,12 +79,12 @@ footer a {
 
 img{
     max-width: 1000px;
-    border: 7px solid cyan;
+    border: 7px solid goldenrod;
     display: block;
     margin: 0 auto;
 }
 
 body{
-    background-color: goldenrod;
+    background-color:  black;
 }
 
