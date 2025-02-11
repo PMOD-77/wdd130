@@ -1,0 +1,30 @@
+#content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.blue {
+    width: 100%;
+    height: 100px;
+    background-color: blue;
+}
+.red {
+    width: 100%;
+    height: 100px;
+    background-color: red;
+}
+.white {
+    width: 100%;
+    height: 100px;
+    background-color: antiquewhite;
+}
+.black {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+}
+.gray {
+    width: 100%;
+    height: 100px;
+    background-color: darkslategray;
+    grid-column: 3/4;
+}

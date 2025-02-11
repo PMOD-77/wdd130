@@ -1,6 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Smooch+Sans:wght@100..900&display=swap');
 
+:root {
+    --heading-font: 
+}
+
 body { 
     background-color: #8CB3BA;
     font-family: 'Exo 2', 'Smooch Sans', sans-serif;
