@@ -2,7 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Smooch+Sans:wght@100..900&display=swap');
 
 :root {
-    --heading-font: 
+    --heading-font: 'Smooch Sans',  'sans-serif', 'times'; 
+    --paragraph-font: 'Exo 2', serif, 'new roman times';
+}
+
+h1, h2, h3, h4 {
+    --heading-font: 'Smooch Sans',  'sans-serif', 'times'; 
+    --paragraph-font: 'Exo 2', serif, 'new roman times';
 }
 
 body { 
