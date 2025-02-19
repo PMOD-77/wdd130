@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    border
+}
+
+header {
+    background-color: blueviolet;
+}
+a {
+    color: brown;
+    text-decoration: none;
+    padding: 0.8em;
+    display: inline-block; 
+}
+
+a:hover {
+    color: blueviolet;
+    background-color: brown;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+body {
+    background-color: magenta;
+}
+
+#flex-cotainer{
+background-color: maroon;
+display: flex;
+flex-wrap: wrap;
+gap: 2em;
+}
+
+#flex-container > section{
+
+}
