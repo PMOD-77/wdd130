@@ -10,14 +10,6 @@ h1, h2, h3, h4 {
     --heading-font: 'Smooch Sans',  'sans-serif', 'times'; 
     --paragraph-font: 'Exo 2', serif, 'new roman times';
 }
-
-body { 
-    background-color: #8CB3BA;
-    font-family: 'Exo 2', 'Smooch Sans', sans-serif;
-    font-size: 22px;
-    margin: 0;
-    padding: 0;
-}
 head {
     background-color: #8CB3BA;
     color: #8CB3BA;
@@ -27,27 +19,24 @@ header {
     color: #2FC6C6;
     display: grid;
     grid-template-columns: 150px auto;
-}
-#content {
-    max-width: 1600px;
-    margin: 0 auto;
-}
-nav a:hover {
-    background-color: #2FC6C6;
-    color: #0B090A;
-    text-decoration: none;
-}
-.icon {
-    width: 80px;
-    padding-top: 10px;
-} 
-.home-grid {
-    display: grid;
-    grid-auto-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
 }
 
-.logo {
-    width: 80px;
+body { 
+    background-color: #8CB3BA;
+    font-family: 'Exo 2', 'Smooch Sans', sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+
+nav {
+    background-color: #2FC6C6;
+    color: #323234;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
 }
 nav a {
     background-color: #2FC6C6;
@@ -55,6 +44,28 @@ nav a {
     text-decoration: none;
     padding: 35px;
 }    
+nav a:hover {
+    background-color: #8CB3BA;
+    color: blue;
+    text-decoration: none;
+}
+.home-grid {
+    display: grid;
+    grid-auto-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.icon {
+    width: 80px;
+    padding-top: 10px;
+} 
+
+.logo {
+    width: 80px;
+}
 footer {
     background-color: #2FC6C6;
     color: #0B090A;
@@ -140,6 +151,7 @@ main section{
 #hero-box{
     grid-column: 1/4;
     grid-row: 1/3;
+    z-index: -1;
 }
 #hero{
     display: grid;
@@ -183,13 +195,6 @@ h1 {
 h2 {
     font-size: 2.5em;
     margin: 0;
-}
-nav {
-    background-color: #2FC6C6;
-    color: #323234;
-    text-decoration: none;
-    display: flex;
-    justify-content: space-around;
 }
 main {
     background-color: #2FC6C6;
