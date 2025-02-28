@@ -5,7 +5,6 @@
     --heading-font: 'Smooch Sans',  'sans-serif', 'times'; 
     --paragraph-font: 'Exo 2', serif, 'new roman times';
 }
-
 h1, h2, h3, h4 {
     --heading-font: 'Smooch Sans',  'sans-serif', 'times'; 
     --paragraph-font: 'Exo 2', serif, 'new roman times';
@@ -21,7 +20,6 @@ header {
     grid-template-columns: 150px auto;
     text-align: center;
 }
-
 body { 
     background-color: #8CB3BA;
     font-family: 'Exo 2', 'Smooch Sans', sans-serif;
@@ -29,8 +27,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
-
 nav {
     background-color: #2FC6C6;
     color: #323234;
@@ -53,7 +49,6 @@ nav a:hover {
     display: grid;
     grid-auto-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
-
 #content {
     max-width: 1600px;
     margin: 0 auto;
@@ -62,7 +57,6 @@ nav a:hover {
     width: 80px;
     padding-top: 10px;
 } 
-
 .logo {
     width: 80px;
 }
@@ -258,8 +252,6 @@ main section img {
     opacity: .6;
     transform: scale(1.1);
 }
-
-
 
 
 @media screen and (max-width: 900px) {
