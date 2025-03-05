@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+* {
+    text-align: center;
+}
+
+body {
+    text-align: center;
+    background-color: black;
+    max-width: 400px;
+    margin: auto;
+}
+img {
+    width: 100%;
+    border-top-right-radius: 10%;
+    border-top-left-radius: 10%;
+}
+.content {
+    text-align: center;
+    background-color: white;
+    border-top-right-radius: 10%;
+    border-top-left-radius: 10%;
+}
+.cosmic {
+    padding: 16px 32px;
+}
+.boring {
+    text-align: center;
+    color:blue;
+    background-color: white;
+}
+h1 {
+    font-weight: bold;
+}
+.seven {
+    color: gray;
+    font-size: 1.5em;
+}
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: blue;
+    color: white;
+    border-bottom-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+}
+footer h1 {
+    padding-top: 12px;
+}
+footer p {
+    padding-bottom: 12px;
+}
+sup {
+    font-size: 20px;
+}
+p {
+    margin: 0;
+}
+h1 {
+    margin: 0;
+}

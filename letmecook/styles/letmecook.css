@@ -1,0 +1,22 @@
+header {
+grid-template-rows: 1fr 1fr 1fr;
+grid-template-columns: 1fr 1fr 1fr;
+grid-row: 1fr 1fr 1fr;
+grid-column: 1fr 1fr 1fr;
+}
+nav {
+grid-template-rows: 1fr 1fr 1fr;
+grid-template-columns: 1fr 1fr 1fr;
+grid-row: 1fr 1fr 1fr;
+grid-column: 1fr 1fr 1fr;
+text-align: center;
+justify-content: center;
+}
+
+main {
+    
+}
+
+.product img {
+    max-width: 100%;
+}
