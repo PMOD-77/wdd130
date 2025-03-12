@@ -55,8 +55,7 @@ nav a:hover {
     color: #6f7364;
 }
 .texting-grid {
-    display: grid;
-    grid-auto-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding: 15px;
 }
 #content {
     max-width: 1600px;
