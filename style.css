@@ -15,3 +15,22 @@ h1 {
 
     font-size: 7em; /* 4*16px = 17x*/
 }
+
+nav {
+    background-color: cyan;
+    color: #323234;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+}
+nav a {
+    background-color: cyan;
+    color: #0B090A;
+    text-decoration: none;
+    padding: 35px;
+}    
+nav a:hover {
+    background-color: cyan;
+    color: blue;
+    text-decoration: none;
+}
