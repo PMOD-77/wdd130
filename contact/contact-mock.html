@@ -128,8 +128,11 @@
             formElement.addEventListener('submit', function(e) {
             // stop the form from doing the default action.
             e.preventDefault();
+            // Capitalize the first letter of fname and lname
+            const capitalizedFname = fname.value.charAt(0).toUpperCase() + fname.value.slice(1);
+            const capitalizedLname = lname.value.charAt(0).toUpperCase() + lname.value.slice(1);
             // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
-            feedbackElement.innerHTML = 'Hello '+ formElement.user_fname.value + formElement.user_lname.value; 'Thank you for your message. We will get back with you as soon as possible!';
+            feedbackElement.innerHTML = 'Hello ' + capitalizedFname + ' ' + capitalizedLname + '; Thank you for your message. We will get back with you as soon as possible!';
             // make the feedback element visible.
             feedbackElement.style.display = "block";
             // add a class to move everything down so our message doesn't cover it.
