@@ -13,13 +13,14 @@ h1, h2, h3, h4 {
     font-family: var(--heading-font);
 }
 body { 
-    background-color: #FFFCEB;
+    background-color: #2B2826;
     font-family: 'Signika Negative', 'Chakra Petch', sans-serif;
     font-size: 22px;
+    color: #FFFCEB;
 }
 h1 {
     
-    color: #140C00;
+    color: #FFFCEB;
     text-align: center;
     text-decoration: none;
     font-size: 3em;
@@ -37,17 +38,18 @@ header {
     max-width: 1600px;
     margin: 0 auto;
 }
-nav { 
-    display: flex;  /* Use flexbox instead of grid for better control */
-    justify-content: space-between; /* Ensures items stay on the same line */
+nav {
+    display: grid;
+    grid-template-columns:120px auto;
     align-items: center;
     background-color: #27206F;
     color: #FFFCEB;
     text-decoration: none;
-    height: 100px;
-    padding: 0 20px; /* Adds some spacing inside nav */
-}
+    height: 100px; }
+
 .links {
+    margin-left:-120px;
+    justify-content: center;
     display: flex;
     gap: 20px;
     align-items: center;
@@ -65,32 +67,6 @@ nav .links a {
 nav .links a:hover {
     background-color: #27206F;
     height: 100%;
-}
-/* Add a black background color to the top navigation bar */
-.topnav {
-    display: flex;
-    align-items: center;
-    gap: 10px; /* Ensures spacing between links and search */
-    padding: 0 16px;
-    height: 100px;
-}
-/* Style the search box inside the navigation bar */
-.topnav input[type="text"] {
-    padding: 6px;
-    font-size: 17px;
-    border: none;
-    width: 250px; /* Increase width for better visibility */
-    flex-shrink: 0; /* Prevents shrinking when resizing */
-}
-/* Change the color of links on hover */
-.topnav a:hover {
-background-color: #FFFCEB;
-color: black;
-}
-/* Style the "active" element to highlight the current page */
-.topnav a.active {
-background-color: #27206F;
-color: #FFFCEB;
 }
 .home-title {
     font-size: 2em;
@@ -114,59 +90,98 @@ color: #FFFCEB;
     align-self: center;
     /* margin-right: 50%; */
 }
-#hero-box{
-    grid-column: 1/4;
-    grid-row: 1/3;
-    /* z-index: -1; */
+#about-img {
+    margin: 0 auto;
+    display: block;
 }
-#hero {
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-}
-#hero-img {
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}#fname {
+    text-align: center;
     width: 100%;
 }
-#hero-msg h1{
+#lname {
     text-align: center;
-    color: #2B2826;
-    padding: 50px;
-}
-#hero-msg h4 {
-    text-align: center;
-    color: #2B2826;
     width: 100%;
 }
-#hero-msg {
-    grid-column: 1/4;
-    padding: 50px;
-}
-main section{
-    background-color: #27206F;
+#commentbox {
+    width: 100%;
     text-align: center;
 }
-.msg {
+form {
+    display: inline-block;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+    text-align: center;
+}
+label {
+    text-align: center;
+}
+input, textarea {
+    /* To make sure that all text fields have the same font settings
+        By default, text areas have a monospace font */
+    font: 1em sans-serif;
+    /* Uniform text field size */
+    width: 300px;
+    box-sizing: border-box;
+    /* Match form field borders */
+    border: 1px solid #999;
+    text-align: center;
+}
+input:focus, textarea:focus {
+    /* Set the outline width and style */
+    outline-style: solid;
+    /* To give a little highlight on active elements */
+    outline-color: #000;
+    text-align: center;
+}
+textarea {
+    /* Align multiline text fields with their labels */
+    vertical-align: top;
+    /* Provide space to type some text */
+    height: 5em;
+    text-align: center;
+}
+.button button {
+    width: 100%; /* Matches the full width of input fields */
+    padding: 0.75rem; /* Adjust padding for a larger button */
+    font-size: 1em; /* Optional: Adjust text size */
+}
+label, input, textarea, button {
+    display: block;
+    width: 20rem;
+    text-align: center;
+}
+.con {
+    margin: 0 auto;
+    width: 30rem;
+    padding: 1rem;
+    text-align: center;
+    /* display: flex; */
+    /* justify-content: center; */
+}
+input, textarea {
+    margin: 0 auto 1rem;
+    display: block; 
+    text-align: center;
+}
+#feedback {
     background-color: #2B2826;
-    padding: 35px;
-    grid-column: 6/10;
-    grid-row: 6/7;
-    box-shadow: 5px 5px 10px #140C00;
+    color: #FFFCEB;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    /* make this element invisible until we are ready for it */
+    display: none;      
 }
-.msg p {
-    font-size: .8em;
-    padding-bottom: 15px;
-}
-.msg h2 {
-    font-family: 'Chakra Petch';
-}
-.home-title {
-    font-size: 2em;
-    margin-top: 10px;
-}
-#logo_link { 
-    padding-top: 5px;
-    padding-top: 5px;
-    justify-self: center;
-    align-self: center;
+.moveDown {
+    margin-top: 3em;
 }
 footer {
     background-color: #27206F;

@@ -4,18 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document | Peter's Website of Delight | About Me</title>
+    <link rel="stylesheet" href="styles/about-me.css">
 </head>
 <body>
     <header>
         <div id="content">
+            <nav>
                 <a id="logo_link" href="index.html">
                     <img class="logo" src="images/pwodlogo.png" alt="My Own Logo">
                 </a>
-                <nav>
+                <div class="links">
                     <a href="pwod-home.html">Home</a>
                     <a href="about-me.html">About Me</a>
                     <a href="works.html">My Literary Works</a>
-                </nav>
+                </div>
+            </nav>
     </header>
     <div id="about">
         <div id="about-box">
@@ -24,14 +27,27 @@
         <section id="about-msg">
             <h1 class="about-title">Hello World!</h1>
             <p> 
-               Hello There, my name is Peter Duffey, I am writer and creator of many things, I have many stories and scripts that I am working on. I have made a few Lego Stop Motions as well. I like Lego, Transformer, Funkos, Fantasy, Most Pop Culture there are exceptions. I am currently working on a book series with my brother called: "Chronicles of Thunder". I also am working on writing a script for a kids TV show. I enjoy playing video games, like Minecraft, Lego Games, and many other games. I am currently located in Rexburg Idaho. Before contacting me KEEP IN MIND TO LET ME KNOW who you are, so I can answer any question you may have. 
-            <p>
-               You can contact me at my 
-               Email:    
-            </p>
-            <h4>ReltronicDeffender@gmail.com </h4>
+               Hello There, my name is Peter Duffey, I am writer and creator of many things, I have many stories and scripts that I am working on. I have made a few Lego Stop Motions as well. I like Lego, Transformer, Funkos, Fantasy, Most Pop Culture there are exceptions. I am currently working on a book series with my brother called: "Chronicles of Thunder". I also am working on writing a script for a kids TV show. I enjoy playing video games, like Minecraft, Lego Games, and many other games. I am currently located in Rexburg Idaho.
         </section>
     </div>
+    <div class="con">
+        <h1>Contact Us</h1>
+        <form action="thankyou.html" class="contact-form">
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname">
+        
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname">
+            
+            <label for="commentbox">Comment Box:</label>
+            <input type="text" id="commentbox" name="commentbox">
+            
+            <p class="button">
+                <button type="submit">Info Request</button>
+            </p>
+        </form>
+    </div>
+    <div id="feedback"></div>
     <footer>
         <p>Dry Oar © 2025 - Peter Duffey</p>
         <p><a href="site-plan.html">Site Plan</a></p>
@@ -48,5 +64,25 @@
             </a>
         </div>
     </footer>
+    <script>
+            // get the feedback div element so we can do something with it.
+            const feedbackElement = document.getElementById('feedback');
+            // get the form so we can read what was entered in it.
+            const formElement = document.forms[0];
+            // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+            formElement.addEventListener('submit', function(e) {
+            // stop the form from doing the default action.
+            e.preventDefault();
+            // Capitalize the first letter of fname and lname
+            const capitalizedFname = fname.value.charAt(0).toUpperCase() + fname.value.slice(1);
+            const capitalizedLname = lname.value.charAt(0).toUpperCase() + lname.value.slice(1);
+            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+            feedbackElement.innerHTML = 'Hello ' + capitalizedFname + ' ' + capitalizedLname + '; Thank you for your message. We will get back with you as soon as possible!';
+            // make the feedback element visible.
+            feedbackElement.style.display = "block";
+            // add a class to move everything down so our message doesn't cover it.
+            document.body.classList.toggle('moveDown');
+        });
+    </script>
 </body>
 </html>
