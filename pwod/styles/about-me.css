@@ -38,18 +38,17 @@ header {
     max-width: 1600px;
     margin: 0 auto;
 }
-nav {
-    display: grid;
-    grid-template-columns:120px auto;
+nav { 
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     background-color: #27206F;
     color: #FFFCEB;
     text-decoration: none;
-    height: 100px; }
-
+    height: 100px;
+    padding: 0 20px;
+}
 .links {
-    margin-left:-120px;
-    justify-content: center;
     display: flex;
     gap: 20px;
     align-items: center;
@@ -65,8 +64,30 @@ nav .links a {
     align-items: center;
 }
 nav .links a:hover {
-    background-color: #27206F;
+    background-color: #2B2826;
     height: 100%;
+}
+.topnav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 16px;
+    height: 100px;
+}
+.topnav input[type="text"] {
+    padding: 6px;
+    font-size: 17px;
+    border: none;
+    width: 250px;
+    text-align: center;
+}
+.topnav a:hover {
+    background-color: #2B2826;
+    color: #140C00;
+}
+.topnav a.active {
+    background-color: #2B2826;
+    color: #FFFCEB;
 }
 .home-title {
     font-size: 2em;
@@ -88,97 +109,86 @@ nav .links a:hover {
     padding-top: 5px;
     justify-self: center;
     align-self: center;
-    /* margin-right: 50%; */
 }
 #about-img {
     margin: 0 auto;
     display: block;
+}
+#about-msg h1{
+    text-align: center;
+    color: #FFFCEB;
+    
+}
+#about-msg {
+    padding: 15px; 
 }
 .contact-form {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}#fname {
-    text-align: center;
-    width: 100%;
 }
-#lname {
-    text-align: center;
+input[type=text], select, textarea {
     width: 100%;
+    padding: 12px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
 }
-#commentbox {
-    width: 100%;
-    text-align: center;
+input[type=submit] {
+    color: #FFFCEB;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+} 
+.container {
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    box-sizing: border-box;
 }
 form {
-    display: inline-block;
-    padding: 1em;
-    border: 1px solid #ccc;
-    border-radius: 1em;
-    text-align: center;
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
 }
-label {
-    text-align: center;
-}
-input, textarea {
-    /* To make sure that all text fields have the same font settings
-        By default, text areas have a monospace font */
-    font: 1em sans-serif;
-    /* Uniform text field size */
-    width: 300px;
-    box-sizing: border-box;
-    /* Match form field borders */
-    border: 1px solid #999;
-    text-align: center;
-}
-input:focus, textarea:focus {
-    /* Set the outline width and style */
-    outline-style: solid;
-    /* To give a little highlight on active elements */
-    outline-color: #000;
-    text-align: center;
-}
-textarea {
-    /* Align multiline text fields with their labels */
-    vertical-align: top;
-    /* Provide space to type some text */
-    height: 5em;
-    text-align: center;
-}
-.button button {
-    width: 100%; /* Matches the full width of input fields */
-    padding: 0.75rem; /* Adjust padding for a larger button */
-    font-size: 1em; /* Optional: Adjust text size */
-}
-label, input, textarea, button {
-    display: block;
-    width: 20rem;
-    text-align: center;
-}
-.con {
-    margin: 0 auto;
-    width: 30rem;
-    padding: 1rem;
-    text-align: center;
-    /* display: flex; */
-    /* justify-content: center; */
-}
-input, textarea {
-    margin: 0 auto 1rem;
-    display: block; 
-    text-align: center;
-}
-#feedback {
-    background-color: #2B2826;
+input[type=submit] {
+    background-color: #27206F;
     color: #FFFCEB;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: .5em;
-    /* make this element invisible until we are ready for it */
-    display: none;      
+    width: 100%;
+    max-width: 400px;
+    padding: 15px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+}
+input[type=submit]:hover {
+    background-color: #140C00;
+}
+input[type="text"], 
+input[type="email"], 
+select, 
+textarea {
+    width: 100%; /* Ensures all inputs take full width */
+    padding: 12px; /* Same padding for consistency */
+    border: 1px solid #ccc; /* Same border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Prevents padding from affecting width */
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+.heading {
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 .moveDown {
     margin-top: 3em;
@@ -204,9 +214,9 @@ footer a {
 }   
 footer a:hover {
     text-decoration: underline;
-    background-color: #27206F;
+    background-color: #2B2826;
     color: #FFFCEB;
     text-align: center;
     font-size: 1.2em;
     
-}  
+}

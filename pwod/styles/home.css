@@ -18,12 +18,10 @@ body {
     font-size: 22px;
 }
 h1 {
-    
     color: #140C00;
     text-align: center;
     text-decoration: none;
     font-size: 3em;
-    
 }
 h2 {
     font-size: 2.5em;
@@ -38,14 +36,14 @@ header {
     margin: 0 auto;
 }
 nav { 
-    display: flex;  /* Use flexbox instead of grid for better control */
-    justify-content: space-between; /* Ensures items stay on the same line */
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     background-color: #27206F;
     color: #FFFCEB;
     text-decoration: none;
     height: 100px;
-    padding: 0 20px; /* Adds some spacing inside nav */
+    padding: 0 20px;
 }
 .links {
     display: flex;
@@ -63,34 +61,30 @@ nav .links a {
     align-items: center;
 }
 nav .links a:hover {
-    background-color: #27206F;
+    background-color: #2B2826;
     height: 100%;
 }
-/* Add a black background color to the top navigation bar */
 .topnav {
     display: flex;
     align-items: center;
-    gap: 10px; /* Ensures spacing between links and search */
+    gap: 10px;
     padding: 0 16px;
     height: 100px;
 }
-/* Style the search box inside the navigation bar */
 .topnav input[type="text"] {
     padding: 6px;
     font-size: 17px;
     border: none;
-    width: 250px; /* Increase width for better visibility */
-    flex-shrink: 0; /* Prevents shrinking when resizing */
+    width: 250px;
+    text-align: center;
 }
-/* Change the color of links on hover */
 .topnav a:hover {
-background-color: #FFFCEB;
-color: black;
+    background-color: #2B2826;
+    color: #140C00;
 }
-/* Style the "active" element to highlight the current page */
 .topnav a.active {
-background-color: #27206F;
-color: #FFFCEB;
+    background-color: #2B2826;
+    color: #FFFCEB;
 }
 .home-title {
     font-size: 2em;
@@ -189,7 +183,7 @@ footer a {
 }   
 footer a:hover {
     text-decoration: underline;
-    background-color: #27206F;
+    background-color: #2B2826;
     color: #FFFCEB;
     text-align: center;
     font-size: 1.2em;
