@@ -18,7 +18,7 @@ body {
     font-size: 22px;
 }
 h1 {
-    color: #140C00;
+    color: #FFFCEB;
     text-align: center;
     text-decoration: none;
     font-size: 3em;
@@ -106,9 +106,6 @@ nav .links a:hover {
 }
 header {
     margin-bottom: 20px;
-}
-.title {
-    color: #FFFCEB;
 }
 .works-content {
     display: grid;
