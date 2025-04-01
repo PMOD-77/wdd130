@@ -107,6 +107,9 @@ nav .links a:hover {
 header {
     margin-bottom: 20px;
 }
+h1 {
+    color: #FFFCEB;
+}
 .works-content {
     display: grid;
     grid-template-columns: 1fr 2fr;
